@@ -10,7 +10,7 @@ const HomeRootLayout = () => {
       }}
     >
       <Tabs.Screen
-        name="Home"
+        name="index"
         options={{
           title: "Home",
           tabBarIcon: ({ color }) => (
@@ -19,7 +19,7 @@ const HomeRootLayout = () => {
         }}
       />
       <Tabs.Screen
-        name="Favorites"
+        name="favorites"
         options={{
           title: "Favorites",
           tabBarIcon: ({ color }) => (
@@ -28,7 +28,7 @@ const HomeRootLayout = () => {
         }}
       />
       <Tabs.Screen
-        name="Cart"
+        name="cart"
         options={{
           title: "Cart",
           tabBarIcon: ({ color }) => (
@@ -37,7 +37,7 @@ const HomeRootLayout = () => {
         }}
       />
       <Tabs.Screen
-        name="Notifications"
+        name="notifications"
         options={{
           title: "Notifications",
           tabBarIcon: ({ color }) => (
