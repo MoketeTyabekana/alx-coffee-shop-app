@@ -89,13 +89,89 @@ export const styles = StyleSheet.create({
     paddingTop: 100,
     gap: 10,
   },
-  coffeeBtn:{
-    backgroundColor: "#C67C4E",
-    padding: 10,
+  coffeeBtn: {
+  paddingVertical: 20,
+  paddingHorizontal: 16,
+  borderRadius: 8,
+  justifyContent: "center",
+  alignItems: "center",
+  marginBottom: 40
+},
+
+  coffeeBtnText: {
+  fontSize: 14,
+  fontWeight: "600",
+},
+
+    card: {
+    backgroundColor: "#fff",
+    borderRadius: 18,
+    
+    width: 160,
+    marginRight: 16,
+    marginBottom: 20,
+    shadowColor: "#000",
+    shadowOpacity: 0.06,
+    shadowOffset: { width: 0, height: 2 },
+    shadowRadius: 8,
+    elevation: 2,
+  },
+  imageContainer: {
+    position: "relative",
+    alignItems: "center",
+    marginBottom: 10,
+  },
+  image: {
+    width: 160,
+    height: 160,
+    borderRadius: 12,
+    resizeMode: "cover",
+  },
+  rating: {
+    flexDirection: "row",
+    alignItems: "center",
+    position: "absolute",
+    top: 6,
+    right: 6,
+    
     borderRadius: 8,
-    color: "#ffffff",
-    fontSize: 16,
-    fontWeight: "500",
-    height: 40,
-  }
+    paddingHorizontal: 6,
+    paddingVertical: 2,
+    elevation: 2,
+  },
+  ratingText: {
+    marginLeft: 3,
+    fontSize: 12,
+    fontWeight: "600",
+    color: "#fff",
+  },
+  name: {
+    fontSize: 17,
+    fontWeight: "700",
+    color: "#222",
+    marginBottom: 2,
+    paddingHorizontal: 10,
+  },
+  type: {
+    fontSize: 13,
+    color: "#888",
+    marginBottom: 8,
+  },
+  bottomRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    padding: 10,
+  },
+  price: {
+    fontSize: 20,
+    fontWeight: "700",
+    color: "#222",
+  },
+  addBtn: {
+    backgroundColor: "#C67C4E",
+    borderRadius: 8,
+    padding: 10,
+    elevation: 2,
+  },
 });

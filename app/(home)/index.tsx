@@ -1,8 +1,10 @@
+import CoffeeCard from "@/components/CoffeeCard";
 import { styles } from "@/styles/_home";
 import { Feather } from "@expo/vector-icons";
 import { ImageBackground } from "expo-image";
 import React, { useState } from "react";
-import { ScrollView, Text, TextInput, TouchableOpacity, View } from "react-native";
+import { FlatList, ScrollView, Text, TextInput, TouchableOpacity, View } from "react-native";
+import { coffees } from "../../constants/data";
 
 export default function HomeScreen() {
   const coffeeTypes = ["All", "Espresso", "Latte", "Cappuccino", "Mocha"];
@@ -48,21 +50,38 @@ export default function HomeScreen() {
         >
           {coffeeTypes.map((type, idx) => (
             <TouchableOpacity
-              key={type}
-              style={[
-                styles.coffeeBtn,
-                {
-                  backgroundColor:
-                    selectedCoffeeType === type ? "#C67C4E" : "#e0e0e0",
-                },
-                { marginRight: idx === coffeeTypes.length - 1 ? 0 : 10 },
-              ]}
-              onPress={() => setSelectedCoffeeType(type)}
-            >
-              <Text style={{ color: selectedCoffeeType === type ? "#fff" : "#000" }}>{type}</Text>
-            </TouchableOpacity>
+  key={type}
+  style={[
+    styles.coffeeBtn,
+    {
+      backgroundColor:
+        selectedCoffeeType === type ? "#C67C4E" : "#e0e0e0",
+      marginRight: idx === coffeeTypes.length - 1 ? 0 : 10,
+    },
+  ]}
+  onPress={() => setSelectedCoffeeType(type)}
+>
+  <Text
+    style={[
+      styles.coffeeBtnText,
+      { color: selectedCoffeeType === type ? "#fff" : "#000" },
+    ]}
+  >
+    {type}
+  </Text>
+</TouchableOpacity>
+
           ))}
         </ScrollView>
+<FlatList style={styles.grid}
+  data={coffees}
+  keyExtractor={(item) => item.id}
+  numColumns={2}
+  renderItem={({ item }) => <CoffeeCard coffee={item} />}
+  columnWrapperStyle={{ justifyContent: 'space-between', paddingHorizontal: 10 }}
+  contentContainerStyle={{ paddingVertical: 10 }}
+  showsVerticalScrollIndicator={false}
+/>
       </View>
     </View>
   );
