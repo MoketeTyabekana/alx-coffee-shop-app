@@ -1,6 +1,12 @@
+export interface CoffeeSize {
+  size: string;
+  price: number;
+}
+
 export interface Coffee {
   id: number;
   name: string;
-  image: string;
-  price: number;
+  description: string;
+  image: any;
+  sizes: CoffeeSize[];
 }
