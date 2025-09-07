@@ -1,5 +1,6 @@
 import { styles } from "@/styles/_home";
 import { Feather } from "@expo/vector-icons"; // <-- Import Feather icons
+import { ImageBackground } from "expo-image";
 import React from "react";
 import { Text, TextInput, View } from "react-native";
 
@@ -18,6 +19,14 @@ export default function HomeScreen() {
           </View>
          <Feather name="filter" size={20} color="#fff" style={{ backgroundColor: "#C67C4E", padding: 16, borderRadius: 8 }} />
         </View>
+        
+      </View>
+
+      <View style={styles.banner}>
+        <ImageBackground source={require("../../assets/images/banner.png")}  
+          style={styles.bannerImage}>
+          <Text style={styles.bannerText}>Promo</Text>
+        </ImageBackground>
       </View>
     </View>
   );

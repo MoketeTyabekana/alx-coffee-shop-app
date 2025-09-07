@@ -10,7 +10,7 @@ export const styles = StyleSheet.create({
 
   header:{
     width: "100%",
-    height: "35%",
+    height: "30%",
      backgroundColor: "#111",
      padding: 20,
      gap: 10,
@@ -47,5 +47,37 @@ export const styles = StyleSheet.create({
      alignItems: "center",
      width: "100%",
      gap: 10,
-  }
+  },
+  banner:{
+    flex: 1,
+    position: "absolute",
+    top: "20%",
+    width: "90%",
+    height: 150,
+    backgroundColor: "#C67C4E",
+    alignSelf: "center",
+    borderRadius: 16,
+  },
+
+  bannerImage:{
+    flex: 1,
+    resizeMode: "cover",
+    justifyContent: "center",
+    borderRadius: 16,
+    overflow: "hidden",
+    width: "100%",
+    height: "100%",
+    position: "relative",
+  },
+  bannerText:{
+    color: "#fff",
+    fontSize: 16,
+    margin: 20,
+    position: "absolute",
+    padding: 8,
+    top: 0,
+    backgroundColor: "#d8d8d8b6",
+    borderRadius: 8,
+    fontWeight: "500",
+  },
 });
