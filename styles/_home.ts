@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native';
 
 
 export const styles = StyleSheet.create({
@@ -18,7 +18,7 @@ export const styles = StyleSheet.create({
      fontWeight: "500",
   },
   headerText:{
-    color: "#fff",
+    color: "#555555ff",
     fontSize: 18,   
     fontWeight: "500",
   },
@@ -39,7 +39,7 @@ export const styles = StyleSheet.create({
     fontSize:16,
     height:"100%",
     padding: 16,
-   
+    width: "100%",
   },
 
   searchContent:{
@@ -49,14 +49,15 @@ export const styles = StyleSheet.create({
      gap: 10,
   },
   banner:{
-    flex: 1,
     position: "absolute",
     top: "20%",
     width: "90%",
-    height: 150,
+    height: 165,
     backgroundColor: "#C67C4E",
     alignSelf: "center",
     borderRadius: 16,
+    overflow: "hidden",
+    zIndex: 2,
   },
 
   bannerImage:{
@@ -80,4 +81,12 @@ export const styles = StyleSheet.create({
     borderRadius: 8,
     fontWeight: "500",
   },
+  coffeeList:{ 
+    flex:1,
+    backgroundColor:"#f7f6f6ff",
+    height:"70%",
+    paddingHorizontal:20,
+    paddingTop: 100,
+  },
+  
 });

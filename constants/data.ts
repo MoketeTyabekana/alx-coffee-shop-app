@@ -1,5 +1,7 @@
 import { Coffee } from "@/interfaces";
 
+export const coffeeTypes = ["All", "Espresso", "Latte", "Cappuccino", "Mocha"];
+
 export const coffees: Coffee[] = [
   {
     id: 1,
@@ -64,7 +66,7 @@ export const coffees: Coffee[] = [
 ];
 
 export const locations = [
-    { id: 1, name: 'Bloemfontein' },
-    { id: 2, name: 'Midrand' },
-    { id: 3, name: 'Botshabelo' },
+  { id: 1, name: 'Bloemfontein' },
+  { id: 2, name: 'Midrand' },
+  { id: 3, name: 'Botshabelo' },
 ];
