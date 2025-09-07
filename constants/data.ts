@@ -32,3 +32,4 @@ export const coffees: Coffee[] = [
     price: 3.8,
   },
 ];
+
