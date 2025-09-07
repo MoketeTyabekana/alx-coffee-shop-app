@@ -63,3 +63,8 @@ export const coffees: Coffee[] = [
   },
 ];
 
+export const locations = [
+    { id: 1, name: 'Bloemfontein' },
+    { id: 2, name: 'Midrand' },
+    { id: 3, name: 'Botshabelo' },
+];
