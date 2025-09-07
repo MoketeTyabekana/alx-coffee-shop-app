@@ -87,6 +87,15 @@ export const styles = StyleSheet.create({
     height:"70%",
     paddingHorizontal:20,
     paddingTop: 100,
+    gap: 10,
   },
-  
+  coffeeBtn:{
+    backgroundColor: "#C67C4E",
+    padding: 10,
+    borderRadius: 8,
+    color: "#ffffff",
+    fontSize: 16,
+    fontWeight: "500",
+    height: 40,
+  }
 });
