@@ -6,6 +6,7 @@ export const coffees: Coffee[] = [
     name: "Espresso",
     description: "Strong and bold espresso shot with rich flavor.",
     image: require("../assets/images/coffee1.png"),
+    rating: 4.7,
     sizes: [
       { size: "Small", price: 2.0 },
       { size: "Medium", price: 2.5 },
@@ -17,6 +18,7 @@ export const coffees: Coffee[] = [
     name: "Cappuccino",
     description: "Classic cappuccino with steamed milk and foam.",
     image: require("../assets/images/coffee2.png"),
+    rating: 4.8,
     sizes: [
       { size: "Small", price: 2.5 },
       { size: "Medium", price: 3.0 },
@@ -28,6 +30,7 @@ export const coffees: Coffee[] = [
     name: "Latte",
     description: "Smooth latte with creamy steamed milk.",
     image: require("../assets/images/coffee3.png"),
+    rating: 4.6,
     sizes: [
       { size: "Small", price: 3.0 },
       { size: "Medium", price: 3.5 },
@@ -39,6 +42,7 @@ export const coffees: Coffee[] = [
     name: "Americano",
     description: "Espresso diluted with hot water for a milder taste.",
     image: require("../assets/images/coffee4.png"),
+    rating: 4.5,
     sizes: [
       { size: "Small", price: 2.3 },
       { size: "Medium", price: 2.8 },
@@ -50,6 +54,7 @@ export const coffees: Coffee[] = [
     name: "Mocha",
     description: "Chocolate-flavored coffee with steamed milk and espresso.",
     image: require("../assets/images/coffee5.png"),
+    rating: 4.9,
     sizes: [
       { size: "Small", price: 3.3 },
       { size: "Medium", price: 3.8 },

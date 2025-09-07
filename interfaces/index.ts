@@ -9,4 +9,5 @@ export interface Coffee {
   description: string;
   image: any;
   sizes: CoffeeSize[];
+  rating: number;
 }
