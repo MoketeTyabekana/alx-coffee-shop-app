@@ -185,10 +185,14 @@ export const styles = StyleSheet.create({
     justifyContent: "space-between",
     alignItems: "center",
     width: "100%",
+    borderBottomColor: "#555555ff",
+    borderBottomWidth: 1,
+    paddingBottom: 8,
+    borderColor: "#555555ff",
   },
   dropDownText: {
     color: "#000",
-    fontSize: 22,
+    fontSize: 18,
   },
   dropDownBtn: {
     flexDirection: "row",
