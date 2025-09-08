@@ -29,6 +29,8 @@
     "expo-symbols": "~0.4.5",
     "expo-system-ui": "~5.0.11",
     "expo-web-browser": "~14.2.0",
+    "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "react-native": "0.79.6",
@@ -41,7 +43,9 @@
     "react-native-webview": "13.13.5"
   },
   "devDependencies": {
+     "@react-native-community/cli": "latest",
     "@babel/core": "^7.25.2",
+    "@types/lodash-es": "^4.17.12",
     "@types/react": "~19.0.10",
     "eslint": "^9.25.0",
     "eslint-config-expo": "~9.2.0",

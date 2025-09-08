@@ -1,4 +1,5 @@
 import CoffeeCard from "@/components/CoffeeCard";
+import MyDropdown from "@/components/Dropdown";
 import { styles } from "@/styles/_home";
 import { Feather } from "@expo/vector-icons";
 import { ImageBackground } from "expo-image";
@@ -7,13 +8,14 @@ import { FlatList, ScrollView, Text, TextInput, TouchableOpacity, View } from "r
 import { coffees } from "../../constants/data";
 
 export default function HomeScreen() {
-  const coffeeTypes = ["All", "Espresso", "Latte", "Cappuccino", "Mocha"];
-  const [selectedCoffeeType, setSelectedCoffeeType] = useState("All");
+  const coffeeTypes = ["All Coffee", "Espresso", "Latte", "Cappuccino", "Mocha"];
+  const [selectedCoffeeType, setSelectedCoffeeType] = useState("All Coffee");
 
   return (
     <View style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.headerText}>Location</Text>
+        <MyDropdown/>
         <View style={styles.searchContent}>
           <View style={styles.searchContainer}>
             <Feather name="search" size={20} color="#555555ff" />

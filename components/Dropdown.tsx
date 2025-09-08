@@ -1,33 +1,35 @@
-import React, { useState } from 'react';
-import { Text, View, } from 'react-native';
-import SelectDropdown from 'react-native-select-dropdown';
+import { styles } from "@/styles/_home";
+import AntDesign from '@expo/vector-icons/AntDesign';
+import React, { useState } from "react";
+import { Text, View } from "react-native";
+import SelectDropdown from "react-native-select-dropdown";
 
-const countries = ["Egypt", "Canada", "Australia", "Ireland"];
+const countries = ["Bloemfontein, SA", "Midrand, SA", "Botshabelo, SA", "Johannesburg, SA", "Cape Town, SA", "Durban, SA"];
 
 const MyDropdown = () => {
-  const [selectedCountry, setSelectedCountry] = useState(null);
+   const defaultLocationName = "Bloemfontein, SA";
+
+  const [selectedCountry, setSelectedCountry] = useState(defaultLocationName);
 
   return (
-    <View>
-        <SelectDropdown
-  data={countries}
-  onSelect={(selectedItem, index) => {
-    console.log(selectedItem);
-  }}
-  renderButton={(selectedItem, isOpened) => (
-    <View >
-      <Text >
-        {selectedItem || 'Select Country'}
-      </Text>
-    </View>
-  )}
-  renderItem={(item, index, isSelected) => (
-    <View >
-      <Text >{item}</Text>
-    </View>
-  )}
-/>
-
+    <View style={styles.dropDown}>
+      <SelectDropdown
+        data={countries}
+        onSelect={(selectedItem, index) => {
+          console.log(selectedItem);
+        }}
+        renderButton={(selectedItem, isOpened) => (
+          <View style={styles.dropDownBtn}>
+            <Text style={{ color: "#555555ff",fontSize:22 }}>{selectedItem || "Select Country"}</Text>
+            <AntDesign name={isOpened ? "up" : "down"} size={12} color={"#555555ff"} />
+          </View>
+        )}
+        renderItem={(item, index, isSelected) => (
+          <View style={{ padding: 10, backgroundColor: isSelected ? "#ddd" : "#fff" ,width: '100%'}}>
+            <Text style={styles.dropDownText}>{item}</Text>
+          </View>
+        )}
+      />
     </View>
   );
 };

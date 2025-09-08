@@ -1,6 +1,6 @@
 import { Coffee } from "@/interfaces";
 
-export const coffeeTypes = ["All", "Espresso", "Latte", "Cappuccino", "Mocha"];
+export const coffeeTypes = ["All Coffee", "Espresso", "Latte", "Cappuccino", "Mocha"];
 
 export const coffees: Coffee[] = [
   {

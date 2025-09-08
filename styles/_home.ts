@@ -161,7 +161,7 @@ export const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
-    padding: 10,
+    paddingHorizontal: 10,
   },
   price: {
     fontSize: 20,
@@ -177,7 +177,24 @@ export const styles = StyleSheet.create({
   descriptor: {
     fontSize: 13,
     color: "#888",
-    marginBottom: 8,
+    marginBottom: 4,
     paddingHorizontal: 10,
+  },
+  dropDown: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    width: "100%",
+  },
+  dropDownText: {
+    color: "#000",
+    fontSize: 22,
+  },
+  dropDownBtn: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    width: "100%",
+    color: "#fff",
   },
 });
