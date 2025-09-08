@@ -7,7 +7,7 @@ export interface Coffee {
   id: number;
   name: string;
   description: string;
-  descriptor: string;
+  descriptor?: string;
   image: any;
   sizes: CoffeeSize[];
   rating: number;

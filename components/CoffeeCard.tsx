@@ -1,16 +1,28 @@
 import { CoffeeCardProps } from "@/interfaces";
 import { Ionicons } from "@expo/vector-icons";
+import { useRouter } from "expo-router";
 import React from "react";
-import { Image, Text, TouchableOpacity, View } from "react-native";
+import { Image, Pressable, Text, TouchableOpacity, View } from "react-native";
 import { styles } from "../styles/_home";
+
+
 
 
 export default function CoffeeCard({ coffee, onPress }: CoffeeCardProps) {
 
   const mediumSize = coffee.sizes.find((s) => s.size === "Medium") || coffee.sizes[0];
+ const router = useRouter();
+
+  const handlePress = () => {
+   router.push({
+  pathname: "/details/[coffeeId]",
+  params: { coffeeId: String(coffee.id) },
+});
+
+  };
 
   return (
-    <View style={styles.card}>
+    <TouchableOpacity  style={styles.card} onPress={handlePress}>
       <View style={styles.imageContainer}>
         <Image source={coffee.image} style={styles.image} />
         <View style={styles.rating}>
@@ -23,11 +35,13 @@ export default function CoffeeCard({ coffee, onPress }: CoffeeCardProps) {
 
       <View style={styles.bottomRow}>
         <Text style={styles.price}>${mediumSize.price.toFixed(2)}</Text>
-        <TouchableOpacity style={styles.addBtn} onPress={onPress}>
+        <Pressable style={styles.addBtn} onPress={onPress}>
           <Ionicons name="add" size={22} color="#fff" />
-        </TouchableOpacity>
+        </Pressable>
       </View>
-    </View>
+
+
+    </TouchableOpacity>
   );
 }
 
