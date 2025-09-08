@@ -1,16 +1,12 @@
-import { Coffee } from "@/interfaces";
+import { CoffeeCardProps } from "@/interfaces";
 import { Ionicons } from "@expo/vector-icons";
 import React from "react";
 import { Image, Text, TouchableOpacity, View } from "react-native";
 import { styles } from "../styles/_home";
 
-interface CoffeeCardProps {
-  coffee: Coffee;
-  onPress?: () => void;
-}
 
 export default function CoffeeCard({ coffee, onPress }: CoffeeCardProps) {
-  // Show the medium price by default
+
   const mediumSize = coffee.sizes.find((s) => s.size === "Medium") || coffee.sizes[0];
 
   return (
@@ -23,7 +19,8 @@ export default function CoffeeCard({ coffee, onPress }: CoffeeCardProps) {
         </View>
       </View>
       <Text style={styles.name}>{coffee.name}</Text>
-      
+      <Text style={styles.descriptor}>{coffee.descriptor}</Text>
+
       <View style={styles.bottomRow}>
         <Text style={styles.price}>${mediumSize.price.toFixed(2)}</Text>
         <TouchableOpacity style={styles.addBtn} onPress={onPress}>

@@ -7,6 +7,7 @@ export const coffees: Coffee[] = [
     id: 1,
     name: "Espresso",
     description: "Strong and bold espresso shot with rich flavor.",
+    descriptor: "Espresso",
     image: require("../assets/images/coffee1.png"),
     rating: 4.7,
     sizes: [
@@ -19,6 +20,7 @@ export const coffees: Coffee[] = [
     id: 2,
     name: "Cappuccino",
     description: "Classic cappuccino with steamed milk and foam.",
+    descriptor: "Foam",
     image: require("../assets/images/coffee2.png"),
     rating: 4.8,
     sizes: [
@@ -31,6 +33,7 @@ export const coffees: Coffee[] = [
     id: 3,
     name: "Latte",
     description: "Smooth latte with creamy steamed milk.",
+    descriptor: "Creamy Milk",
     image: require("../assets/images/coffee3.png"),
     rating: 4.6,
     sizes: [
@@ -43,6 +46,7 @@ export const coffees: Coffee[] = [
     id: 4,
     name: "Americano",
     description: "Espresso diluted with hot water for a milder taste.",
+    descriptor: "Diluted Espresso",
     image: require("../assets/images/coffee4.png"),
     rating: 4.5,
     sizes: [
@@ -55,6 +59,7 @@ export const coffees: Coffee[] = [
     id: 5,
     name: "Mocha",
     description: "Chocolate-flavored coffee with steamed milk and espresso.",
+    descriptor: "Deep Foam",
     image: require("../assets/images/coffee5.png"),
     rating: 4.9,
     sizes: [

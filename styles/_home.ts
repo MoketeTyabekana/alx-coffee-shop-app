@@ -174,4 +174,10 @@ export const styles = StyleSheet.create({
     padding: 10,
     elevation: 2,
   },
+  descriptor: {
+    fontSize: 13,
+    color: "#888",
+    marginBottom: 8,
+    paddingHorizontal: 10,
+  },
 });
