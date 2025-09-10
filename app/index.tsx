@@ -19,7 +19,7 @@ export default function Index() {
             source={require("../assets/images/background.png")}
             style={styles.background}
           >
-            {/* Your content goes here */}
+           
           </ImageBackground>
 
           <LinearGradient

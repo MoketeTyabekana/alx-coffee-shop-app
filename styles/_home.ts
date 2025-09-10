@@ -10,7 +10,7 @@ export const styles = StyleSheet.create({
 
   header:{
     width: "100%",
-    height: "30%",
+    height: "35%",
      backgroundColor: "#111",
      padding: 20,
      gap: 10,
@@ -50,7 +50,7 @@ export const styles = StyleSheet.create({
   },
   banner:{
     position: "absolute",
-    top: "20%",
+    top: "25%",
     width: "90%",
     height: 165,
     backgroundColor: "#C67C4E",
@@ -106,14 +106,12 @@ export const styles = StyleSheet.create({
     card: {
     backgroundColor: "#fff",
     borderRadius: 18,
-    
-    width: 160,
-    marginRight: 16,
-    marginBottom: 20,
+    width: 170,
+    marginBottom: 10,
     shadowColor: "#000",
-    shadowOpacity: 0.06,
+    shadowOpacity: 0.04,
     shadowOffset: { width: 0, height: 2 },
-    shadowRadius: 8,
+    shadowRadius: 6,
     elevation: 2,
   },
   imageContainer: {
@@ -122,7 +120,7 @@ export const styles = StyleSheet.create({
     marginBottom: 10,
   },
   image: {
-    width: 160,
+    width: 170,
     height: 160,
     borderRadius: 12,
     resizeMode: "cover",
@@ -171,7 +169,8 @@ export const styles = StyleSheet.create({
   addBtn: {
     backgroundColor: "#C67C4E",
     borderRadius: 8,
-    padding: 10,
+    padding: 8,
+    marginBottom: 10,
     elevation: 2,
   },
   descriptor: {
@@ -189,6 +188,7 @@ export const styles = StyleSheet.create({
     borderBottomWidth: 1,
     paddingBottom: 8,
     borderColor: "#555555ff",
+    marginBottom: 10,
   },
   dropDownText: {
     color: "#000",

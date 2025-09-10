@@ -20,7 +20,7 @@ const MyDropdown = () => {
         }}
         renderButton={(selectedItem, isOpened) => (
           <View style={styles.dropDownBtn}>
-            <Text style={{ color: "#555555ff",fontSize:18 }}>{selectedItem || "Select Country"}</Text>
+            <Text style={{ color: "#555555ff",fontSize:18 }}>{selectedItem || "Select City"}</Text>
             <AntDesign name={isOpened ? "up" : "down"} size={12} color={"#555555ff"} />
           </View>
         )}
