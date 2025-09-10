@@ -28,7 +28,24 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     marginBottom: 20,
   },
-
+coffeeDetails:{
+  flexDirection: "row",
+  justifyContent: "space-between",
+    alignItems: "center",
+    marginBottom: 10,
+},
+icons:{
+    flexDirection:"row",
+    gap:10,
+}
+,
+  icon:{
+    width: 24,
+    height:24,
+    padding:20,
+    borderRadius:5,
+    backgroundColor: "#e7e7e76d"
+  }
 });
 
 export { styles };

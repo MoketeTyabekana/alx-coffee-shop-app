@@ -23,6 +23,7 @@ export const coffees: Coffee[] = [
     descriptor: "Foam",
     image: require("../assets/images/coffee2.png"),
     rating: 4.8,
+    numberOfRatings: 64,
     sizes: [
       { size: "Small", price: 2.5 },
       { size: "Medium", price: 3.0 },
@@ -36,6 +37,7 @@ export const coffees: Coffee[] = [
     descriptor: "Creamy Milk",
     image: require("../assets/images/coffee3.png"),
     rating: 4.6,
+    numberOfRatings: 85,
     sizes: [
       { size: "Small", price: 3.0 },
       { size: "Medium", price: 3.5 },
@@ -49,6 +51,7 @@ export const coffees: Coffee[] = [
     descriptor: "Diluted Espresso",
     image: require("../assets/images/coffee4.png"),
     rating: 4.5,
+    numberOfRatings :47,
     sizes: [
       { size: "Small", price: 2.3 },
       { size: "Medium", price: 2.8 },
@@ -62,6 +65,7 @@ export const coffees: Coffee[] = [
     descriptor: "Deep Foam",
     image: require("../assets/images/coffee5.png"),
     rating: 4.9,
+    numberOfRatings: 120,
     sizes: [
       { size: "Small", price: 3.3 },
       { size: "Medium", price: 3.8 },

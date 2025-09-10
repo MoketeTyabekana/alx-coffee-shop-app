@@ -11,6 +11,7 @@ export interface Coffee {
   image: any;
   sizes: CoffeeSize[];
   rating: number;
+  numberOfRatings?: number;
 }
 
 export interface CoffeeCardProps {
