@@ -10,10 +10,11 @@ export const coffees: Coffee[] = [
     descriptor: "Espresso",
     image: require("../assets/images/coffee1.png"),
     rating: 4.7,
+    numberOfRatings: 102,
     sizes: [
-      { size: "Small", price: 2.0 },
-      { size: "Medium", price: 2.5 },
-      { size: "Large", price: 3.0 },
+      { size: "S", price: 2.0 },
+      { size: "M", price: 2.5 },
+      { size: "L", price: 3.0 },
     ],
   },
   {
@@ -25,9 +26,9 @@ export const coffees: Coffee[] = [
     rating: 4.8,
     numberOfRatings: 64,
     sizes: [
-      { size: "Small", price: 2.5 },
-      { size: "Medium", price: 3.0 },
-      { size: "Large", price: 3.5 },
+      { size: "S", price: 2.5 },
+      { size: "M", price: 3.0 },
+      { size: "L", price: 3.5 },
     ],
   },
   {
@@ -39,9 +40,9 @@ export const coffees: Coffee[] = [
     rating: 4.6,
     numberOfRatings: 85,
     sizes: [
-      { size: "Small", price: 3.0 },
-      { size: "Medium", price: 3.5 },
-      { size: "Large", price: 4.0 },
+      { size: "S", price: 3.0 },
+      { size: "M", price: 3.5 },
+      { size: "L", price: 4.0 },
     ],
   },
   {
@@ -53,9 +54,9 @@ export const coffees: Coffee[] = [
     rating: 4.5,
     numberOfRatings :47,
     sizes: [
-      { size: "Small", price: 2.3 },
-      { size: "Medium", price: 2.8 },
-      { size: "Large", price: 3.3 },
+      { size: "S", price: 2.3 },
+      { size: "M", price: 2.8 },
+      { size: "L", price: 3.3 },
     ],
   },
   {
@@ -67,9 +68,9 @@ export const coffees: Coffee[] = [
     rating: 4.9,
     numberOfRatings: 120,
     sizes: [
-      { size: "Small", price: 3.3 },
-      { size: "Medium", price: 3.8 },
-      { size: "Large", price: 4.3 },
+      { size: "S", price: 3.3 },
+      { size: "M", price: 3.8 },
+      { size: "L", price: 4.3 },
     ],
   },
 ];

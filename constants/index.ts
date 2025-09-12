@@ -4,5 +4,6 @@ const MILK =require('@/assets/images/milk.png');
 const DELIVERY = require('@/assets/images/delivery.png');
 
 
+
 export { BACKGROUNDIMAGE, BEAN, DELIVERY, MILK };
 

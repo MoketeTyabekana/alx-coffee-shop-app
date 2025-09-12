@@ -18,3 +18,8 @@ export interface CoffeeCardProps {
   coffee: Coffee;
   onPress?: () => void;
 }
+
+export interface ButtonProps {
+  title?: string;
+  onPress?: () => void;
+}
