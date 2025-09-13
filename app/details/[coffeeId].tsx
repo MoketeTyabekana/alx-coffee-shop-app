@@ -8,6 +8,7 @@ import { useLocalSearchParams, useRouter } from "expo-router";
 import React, { useState } from "react";
 
 import { useFavorites } from "@/context/FavoritesContext";
+
 import {
   Image,
   SafeAreaView,
@@ -45,8 +46,9 @@ export default function CoffeeDetails() {
 
   const { coffeeId } = useLocalSearchParams();
   const coffee = coffees.find((c) => c.id === Number(coffeeId));
-   const { favorites, addToFavorites } = useFavorites();
+  const { favorites, toggleFavorite } = useFavorites();
 const isFavorite = favorites.some((fav) => fav.id === coffee.id);
+
 
   const router = useRouter();
 
@@ -55,7 +57,7 @@ const isFavorite = favorites.some((fav) => fav.id === coffee.id);
     coffee.sizes.length > 0 ? coffee.sizes[0] : { size: "N/A", price: 0 }
   );
 
-  const addTofavorites = () => {};
+  
 
   return (
     <SafeAreaProvider>
@@ -66,7 +68,7 @@ const isFavorite = favorites.some((fav) => fav.id === coffee.id);
               <Entypo name="chevron-thin-left" size={24} color="black" />
             </TouchableOpacity>
             <Text style={styles.headerTitle}>Detail</Text>
-            <TouchableOpacity onPress={() => addToFavorites(coffee)}>
+            <TouchableOpacity onPress={() => toggleFavorite(coffee)}>
               <FontAwesome6 name="heart" size={24} color={isFavorite ? "#C67C4E" : "black"} />
             </TouchableOpacity >
           </View>

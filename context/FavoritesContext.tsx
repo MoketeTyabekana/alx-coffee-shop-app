@@ -1,8 +1,7 @@
-// FavoritesContext.tsx
 import { Coffee } from "@/interfaces";
 import React, { createContext, useContext, useState } from "react";
 
-const FavoritesContext = createContext();
+const FavoritesContext = createContext(null);
 
 export const FavoritesProvider = ({ children }) => {
   const [favorites, setFavorites] = useState<Coffee[]>([]);
@@ -17,11 +16,28 @@ export const FavoritesProvider = ({ children }) => {
     setFavorites(favorites.filter((fav) => fav.id !== coffeeId));
   };
 
+  const toggleFavorite = (coffee: Coffee) => {
+    const isFavorite = favorites.some((fav) => fav.id === coffee.id);
+    if (isFavorite) {
+      removeFromFavorites(coffee.id);
+    } else {
+      addToFavorites(coffee);
+    }
+  };
+
   return (
-    <FavoritesContext.Provider value={{ favorites, addToFavorites, removeFromFavorites }}>
+    <FavoritesContext.Provider
+      value={{ favorites, addToFavorites, removeFromFavorites, toggleFavorite }}
+    >
       {children}
     </FavoritesContext.Provider>
   );
 };
 
-export const useFavorites = () => useContext(FavoritesContext);
+export const useFavorites = () => {
+  const context = useContext(FavoritesContext);
+  if (!context) {
+    throw new Error("useFavorites must be used within a FavoritesProvider");
+  }
+  return context;
+};
