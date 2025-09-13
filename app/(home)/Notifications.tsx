@@ -1,4 +1,4 @@
-import { styles } from "@/styles/_common";
+import { styles } from "@/styles/_notifications";
 import { Header } from "@react-navigation/elements";
 import React from "react";
 import { SafeAreaView, Text, View } from "react-native";

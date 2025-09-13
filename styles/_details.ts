@@ -6,24 +6,8 @@ export const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    padding: 16,
+    paddingHorizontal: 20,
     backgroundColor: "#fff",
-  },
-  header: {
-  marginBottom: 4,
-  paddingHorizontal: 20,
-  paddingVertical: 10,
-  backgroundColor: "#fff",
-  shadowColor: "#000000d8",
-  shadowOffset: { width: 0, height: 1.5 },
-  shadowOpacity: 0.2,
-  elevation: 4,
-  width: "100%",
-},
-  headerTitle: {
-    fontSize: 18,
-    fontWeight: "600",
-    
   },
   coffeeImage: {
     width: "100%",

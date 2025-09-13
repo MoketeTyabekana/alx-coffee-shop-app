@@ -15,7 +15,6 @@ const HomeRootLayout = () => {
           fontSize: 20,
           fontWeight: "bold",
         },
-
         tabBarShowLabel: false,
       }}
     >
@@ -23,7 +22,6 @@ const HomeRootLayout = () => {
         name="index"
         options={{
           title: "Home",
-        
           tabBarIcon: ({ color }) => (
             <Ionicons name="home-outline" size={24} color={color} />
           ),
