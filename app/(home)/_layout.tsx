@@ -24,7 +24,7 @@ const HomeRootLayout = () => {
           title: "Home",
           headerShown: false,
           tabBarIcon: ({ color }) => (
-            <Ionicons name="home" size={24} color={color} />
+            <Ionicons name="home-outline" size={24} color={color} />
           ),
         }}
       />
