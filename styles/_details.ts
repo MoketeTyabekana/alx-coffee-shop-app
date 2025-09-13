@@ -10,15 +10,12 @@ export const styles = StyleSheet.create({
     backgroundColor: "#fff",
   },
   header: {
-  flexDirection: "row",
-  justifyContent: "space-between",
-  alignItems: "center",
-  marginBottom: 16,
+  marginBottom: 4,
   paddingHorizontal: 20,
   paddingVertical: 10,
   backgroundColor: "#fff",
-  shadowColor: "#000",
-  shadowOffset: { width: 0, height: 1 },
+  shadowColor: "#000000d8",
+  shadowOffset: { width: 0, height: 1.5 },
   shadowOpacity: 0.2,
   elevation: 4,
   width: "100%",
@@ -26,6 +23,7 @@ export const styles = StyleSheet.create({
   headerTitle: {
     fontSize: 18,
     fontWeight: "600",
+    
   },
   coffeeImage: {
     width: "100%",
