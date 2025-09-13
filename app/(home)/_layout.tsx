@@ -42,7 +42,7 @@ const HomeRootLayout = () => {
         name="cart"
         options={{
           title: "Cart",
-          headerShown: true,
+          headerShown: false,
           tabBarIcon: ({ color }) => (
             <Ionicons name="cart-outline" size={24} color={color} />
           ),

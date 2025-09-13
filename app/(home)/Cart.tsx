@@ -1,3 +1,4 @@
+import Header from "@/components/common/Header";
 import { styles } from "@/styles/_common";
 import React from "react";
 import { SafeAreaView, Text, View } from "react-native";
@@ -7,8 +8,11 @@ export default function CartScreen() {
   return (
     <SafeAreaProvider>
       <SafeAreaView style={styles.flexOne}>
-        <View style={styles.container}>
-          <Text>Cart Page</Text>
+        <View style={{backgroundColor:"#ffffffff",flex:1}}>
+          <Header title="Order"/>
+          <View style={styles.container}>
+            <Text>Cart Page</Text>
+          </View>
         </View>
       </SafeAreaView>
     </SafeAreaProvider>

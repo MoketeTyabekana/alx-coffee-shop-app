@@ -24,6 +24,10 @@ export interface ButtonProps {
   onPress?: () => void;
 }
 
+export interface HeaderProps {
+  title?: string;
+}
+
 export interface FavoritesContextType {
   favorites: Coffee[];
   addToFavorites: (coffee: Coffee) => void;
