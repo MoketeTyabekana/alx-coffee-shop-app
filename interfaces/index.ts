@@ -23,3 +23,10 @@ export interface ButtonProps {
   title?: string;
   onPress?: () => void;
 }
+
+export interface FavoritesContextType {
+  favorites: Coffee[];
+  addToFavorites: (coffee: Coffee) => void;
+  removeFromFavorites: (coffeeId: number) => void;
+  toggleFavorite: (coffee: Coffee) => void;
+}

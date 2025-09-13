@@ -1,22 +1,28 @@
 import { Ionicons } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
 
-
 const HomeRootLayout = () => {
   return (
-   
-
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: "#C67C4E",
-        headerShown: false,
-          tabBarShowLabel: false, 
+        headerStyle: {
+          backgroundColor: "#C67C4E",
+        },
+        headerTitleStyle: {
+          color: "#fff",
+          fontSize: 20,
+          fontWeight: "bold",
+        },
+
+        tabBarShowLabel: false,
       }}
     >
       <Tabs.Screen
         name="index"
         options={{
           title: "Home",
+          headerShown: false,
           tabBarIcon: ({ color }) => (
             <Ionicons name="home" size={24} color={color} />
           ),
@@ -26,6 +32,7 @@ const HomeRootLayout = () => {
         name="favorites"
         options={{
           title: "Favorites",
+          headerShown: true,
           tabBarIcon: ({ color }) => (
             <Ionicons name="heart-outline" size={24} color={color} />
           ),
@@ -35,6 +42,7 @@ const HomeRootLayout = () => {
         name="cart"
         options={{
           title: "Cart",
+          headerShown: true,
           tabBarIcon: ({ color }) => (
             <Ionicons name="cart-outline" size={24} color={color} />
           ),
@@ -44,16 +52,14 @@ const HomeRootLayout = () => {
         name="notifications"
         options={{
           title: "Notifications",
+          headerShown: true,
           tabBarIcon: ({ color }) => (
             <Ionicons name="notifications-outline" size={24} color={color} />
           ),
         }}
       />
     </Tabs>
-
-
   );
 };
 
 export default HomeRootLayout;
-

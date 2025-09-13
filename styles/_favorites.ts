@@ -18,21 +18,21 @@ grid:{
   alignItems:"center",
   gap: 10,
   padding: 5,
-  backgroundColor: "#fff", // required for shadow to be visible
+  backgroundColor: "#fff",
   borderRadius: 8,
 
-  // iOS shadow
+
   shadowColor: "#000",
-  shadowOffset: { width: 0, height: 2 },
+  shadowOffset: { width: 0, height: 1 },
   shadowOpacity: 0.2,
-  shadowRadius: 4,
+  shadowRadius: 2,
   marginBottom:10,
-  // Android shadow
+  width:"100%",
   elevation: 4,
 },
  image:{
-    width:70,
-    height:70,
+    width:100,
+    height:100,
     borderRadius:5,
  },
  name:{
@@ -43,4 +43,37 @@ grid:{
   fontSize:12,
   color:"#8b8b8bff"
  },
+ price:{
+    fontSize:18,
+    marginTop:4,
+    color:"#C67C4E",
+    fontWeight:600
+ },
+ rating:{
+    flexDirection:"row",
+    gap:10,
+    alignItems:"center"
+ },
+ ratingText:{
+    fontSize:14,
+color:"#8b8b8bff"
+ },
+ contentContainer: {
+  flex: 1,
+  justifyContent: "center",
+},
+
+buttonContainer: {
+  justifyContent: "center",
+  alignItems: "flex-end",
+ 
+},
+
+cartButton: {
+  padding: 10,
+ backgroundColor:"#C67C4E",
+  borderRadius: 5,
+  top:28,
+},
+
 })
