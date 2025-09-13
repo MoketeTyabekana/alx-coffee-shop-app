@@ -68,12 +68,4 @@ buttonContainer: {
   alignItems: "flex-end",
  
 },
-
-cartButton: {
-  padding: 10,
- backgroundColor:"#C67C4E",
-  borderRadius: 5,
-  top:28,
-},
-
 })

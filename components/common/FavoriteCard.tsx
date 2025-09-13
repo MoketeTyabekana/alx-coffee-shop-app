@@ -1,10 +1,10 @@
 import { useFavorites } from "@/context/FavoritesContext";
 import { styles } from "@/styles/_favorites";
 import { Ionicons } from "@expo/vector-icons";
-import FontAwesome6 from "@expo/vector-icons/FontAwesome6";
 import { useRouter } from "expo-router";
 import React from "react";
-import { Image, Pressable, Text, TouchableOpacity, View } from "react-native";
+import { Image, Text, TouchableOpacity, View } from "react-native";
+import AddToCart from "./AddToCart";
 
 export default function FavoriteCard({ coffee }) {
   const router = useRouter();
@@ -42,9 +42,7 @@ export default function FavoriteCard({ coffee }) {
   </View>
 
   <View style={styles.buttonContainer}>
-    <Pressable style={styles.cartButton}>
-      <FontAwesome6 name="cart-plus" size={24} color="#fff" />
-    </Pressable>
+    <AddToCart style={{ top:35 }}/>
   </View>
 </TouchableOpacity>
     </>

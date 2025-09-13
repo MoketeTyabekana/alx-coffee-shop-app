@@ -2,8 +2,9 @@ import { CoffeeCardProps } from "@/interfaces";
 import { Ionicons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
 import React from "react";
-import { Image, Pressable, Text, TouchableOpacity, View } from "react-native";
+import { Image, Text, TouchableOpacity, View } from "react-native";
 import { styles } from "../styles/_home";
+import AddToCart from "./common/AddToCart";
 
 export default function CoffeeCard({ coffee, onPress }: CoffeeCardProps) {
   const mediumSize =
@@ -31,9 +32,7 @@ export default function CoffeeCard({ coffee, onPress }: CoffeeCardProps) {
 
       <View style={styles.bottomRow}>
         <Text style={styles.price}>${mediumSize.price.toFixed(2)}</Text>
-        <Pressable style={styles.addBtn} onPress={onPress}>
-          <Ionicons name="add" size={16} color="#fff" />
-        </Pressable>
+        <AddToCart/>
       </View>
     </TouchableOpacity>
   );
