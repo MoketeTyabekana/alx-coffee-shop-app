@@ -80,7 +80,6 @@ export const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: "gray",
     borderRadius: 5,
-    textAlign: "center",
     flex: 1,
   },
   priceText: {
@@ -109,6 +108,13 @@ selectedSizeBox: {
 },
 sizeText: {
   fontSize: 16,
+  textAlign: "center",
+  color: "#C67C4E",
+  fontWeight:600,
 },
+
+coffeeDescription:{
+  flexDirection:"column"
+}
 
 });

@@ -90,7 +90,7 @@ export default function HomeScreen() {
             ))}
           </ScrollView>
           <FlatList
-            style={styles.grid}
+           
             data={coffees}
             keyExtractor={(item) => item.id}
             numColumns={2}

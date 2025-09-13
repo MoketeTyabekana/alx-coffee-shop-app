@@ -1,8 +1,12 @@
+import { FavoritesProvider } from "@/context/FavoritesContext";
 import { Ionicons } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
 
+
 const HomeRootLayout = () => {
   return (
+     <FavoritesProvider>
+
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: "#C67C4E",
@@ -47,6 +51,8 @@ const HomeRootLayout = () => {
         }}
       />
     </Tabs>
+    </FavoritesProvider>
+
   );
 };
 
