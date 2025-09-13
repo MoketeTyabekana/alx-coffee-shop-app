@@ -1,5 +1,5 @@
-import Header from "@/components/common/Header";
 import { styles } from "@/styles/_cart";
+import { Header } from "@react-navigation/elements";
 import React from "react";
 import { SafeAreaView, Text, View } from "react-native";
 import { SafeAreaProvider } from "react-native-safe-area-context";
