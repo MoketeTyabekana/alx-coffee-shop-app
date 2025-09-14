@@ -63,7 +63,7 @@ const isFavorite = favorites.some((fav) => fav.id === coffee.id);
     <SafeAreaProvider>
       <SafeAreaView style={styles.flexOne}>
         <View style={styles.container}>
-          <View style={styles.header}>
+          <View style={[styles.header,]}>
             <TouchableOpacity onPress={() => router.back()}>
               <Entypo name="chevron-thin-left" size={24} color="black" />
             </TouchableOpacity>

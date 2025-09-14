@@ -9,6 +9,24 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 20,
     backgroundColor: "#fff",
   },
+        header: {
+    flexDirection:"row",
+    justifyContent:"space-between",
+    alignItems:"center",
+  paddingVertical: 20,
+  backgroundColor: "#fff",
+  shadowColor: "#000000d8",
+  shadowOffset: { width: 0, height: 1.5 },
+  shadowOpacity: 0.2,
+  elevation: 4,
+  width: "100%",
+  marginBottom:10,
+},
+  headerTitle: {
+    fontSize: 18,
+    fontWeight: "600",
+    
+  },
   coffeeImage: {
     width: "100%",
     height: 200,
