@@ -1,3 +1,6 @@
+import { ReactNode } from "react";
+
+
 export interface CoffeeSize {
   size: string;
   price: number;
@@ -22,10 +25,12 @@ export interface CoffeeCardProps {
 export interface ButtonProps {
   title?: string;
   onPress?: () => void;
+  variant?: "primary" | "secondary" | "outline";
 }
 
 export interface HeaderProps {
   title?: string;
+   icon?: ReactNode;
 }
 
 export interface FavoritesContextType {

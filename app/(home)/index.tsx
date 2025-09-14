@@ -23,7 +23,18 @@ export default function HomeScreen() {
     "Cappuccino",
     "Mocha",
   ];
-  const [selectedCoffeeType, setSelectedCoffeeType] = useState("All Coffee");
+
+const [selectedCoffeeType, setSelectedCoffeeType] = useState("All Coffee");
+
+const filteredCoffees =
+  selectedCoffeeType?.toLowerCase() === "all coffee"
+    ? coffees
+    : coffees.filter(
+        (coffee) =>
+          coffee.type?.toLowerCase() === selectedCoffeeType?.toLowerCase()
+      );
+
+
 
   return (
     <SafeAreaProvider>
@@ -89,6 +100,8 @@ export default function HomeScreen() {
               </TouchableOpacity>
             ))}
           </ScrollView>
+
+          
           <FlatList
            
             data={coffees}
